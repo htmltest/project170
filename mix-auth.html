@@ -21,7 +21,7 @@
             <header>
                 <a href="#" class="mobile-menu-link"><div class="mobile-menu-link-1"></div><div class="mobile-menu-link-2"></div><div class="mobile-menu-link-3"></div></a>
                 <div class="logo">только для врачей</div>
-                <div class="header-user"><a href="windows/profile.html" class="window-link">Андрей<br /> Агапонов</a></div>
+                <div class="header-user"><a href="windows/profile.html" class="window-link"><span>Андрей</span><span>Агапонов</span></a></div>
                 <div class="header-menu">
                     <ul>
                         <li><a href="#">Советы наставников</a></li>
@@ -34,12 +34,13 @@
             <div class="mobile-menu">
                 <div class="mobile-menu-container">
                     <div class="mobile-menu-content">
-                        <div class="mobile-menu-user"><a href="windows/profile.html" class="window-link">Андрей Агапонов</a></div>
+                        <div class="mobile-menu-user"><a href="windows/profile.html" class="window-link"><span>Андрей</span><span>Агапонов</span></a></div>
                         <div class="mobile-menu-list">
                             <ul>
                                 <li><a href="#">Советы наставников</a></li>
                                 <li><a href="#">Комбинированное лечение</a></li>
                                 <li><a href="#">Школа молодых мастеров</a></li>
+                                <li class="mobile-menu-exit"><a href="#">Выход</a></li>
                             </ul>
                         </div>
                     </div>
@@ -49,7 +50,6 @@
             <!-- mix -->
             <div class="mix">
                 <div class="mix-header-bg"><img src="images/mix-header-bg.png" alt="" /></div>
-                <div class="mix-author-bg"><img src="files/mix-author-bg.png" alt="" /></div>
 
                 <div class="mix-schedule">
                     <div class="mix-schedule-close"><a href="#">назад</a></div>
@@ -131,35 +131,205 @@
                     </div>
                 </div>
 
-                <div class="mix-header">
-                    <div class="mix-header-title"><span><em>Искусство сочетать:</em></span> комбинированное лечение</div>
-                    <div class="mix-header-type">вебинар</div>
-                </div>
-
-                <div class="mix-schedule-link"><a href="#">РАСписание</a></div>
-
-                <!-- mix video -->
-                <div class="mix-video">
-                    <div class="mix-video-subtitle-mobile">Синдром раздраженного кишечника и лечение геморроя</div>
-                    <div class="mix-video-subscribe"><a href="#">подписаться</a></div>
-                    <div class="mix-video-player">
-                        <a href="files/video.mp4" class="mix-video-player-preview">
-                            <div class="mix-video-player-preview-photo" style="background-image:url(files/mix-video.jpg)"></div>
-                            <div class="mix-video-player-preview-btn"></div>
-                        </a>
-                        <div class="mix-video-player-content"></div>
-                    </div>
-                    <div class="mix-video-info">
-                        <div class="mix-video-author">John<br /> Goldshtein</div>
-                        <div class="mix-video-subscribe-mobile"><a href="#">подписаться</a></div>
-                        <div class="mix-video-subtitle">Синдром раздраженного кишечника и лечение геморроя</div>
-                        <div class="mix-video-descr">
-                            <p>Отдельный вид нашего общего искусства — общаться с коллегами из других стран. Преодолевая границы — географические, психологические, языковые – обобщать опыт и совместно вырабатывать новые протоколы лечения.<br /> Отдельный вид нашего общего искусства — общаться с коллегами из других стран. Преодолевая границы — географические, психологические, яыковые — обобщать опыт и совместно вырабатывать новые протоколы лечения.</p>
-                            <p>Вебинар с участием мэтра из медицинской Академии Брюсселя Phil Brown и президента общества колопроктологов Парижа John Goldshtein — «Тема Болезнь Крона и лечение геморроя» пройдёт для зарегистрированных пользователей 15 сентября 2020 в прямом эфире!</p>
+                <div class="mix-detail">
+                    <div class="mix-detail-item active">
+                        <div class="mix-author-bg"><img src="files/mix-author-bg.png" alt="" /></div>
+                        <div class="mix-header">
+                            <div class="mix-header-title"><span><em>Искусство сочетать:</em></span> комбинированное лечение</div>
+                            <div class="mix-header-type">вебинар</div>
                         </div>
+
+                        <div class="mix-schedule-link"><a href="#">РАСписание</a></div>
+
+                        <!-- mix video -->
+                        <div class="mix-video">
+                            <div class="mix-video-subtitle-mobile">Синдром раздраженного кишечника и лечение геморроя</div>
+                            <div class="mix-video-title">лайфтрансляция</div>
+                            <div class="mix-video-player">
+                                <div class="mix-video-player-preview">
+                                    <div class="mix-video-player-preview-photo" style="background-image:url(files/mix-video.jpg)"></div>
+                                    <div class="mix-video-player-preview-btn"></div>
+                                </div>
+                                <div class="mix-video-player-content"></div>
+                            </div>
+                            <div class="mix-video-info">
+                                <div class="mix-video-author">John<br /> Goldshtein</div>
+                                <div class="mix-video-title-mobile">лайфтрансляция</div>
+                                <div class="mix-video-subtitle">Синдром раздраженного кишечника и лечение геморроя</div>
+                                <div class="mix-video-descr">
+                                    <p>Отдельный вид нашего общего искусства — общаться с коллегами из других стран. Преодолевая границы — географические, психологические, языковые – обобщать опыт и совместно вырабатывать новые протоколы лечения.<br /> Отдельный вид нашего общего искусства — общаться с коллегами из других стран. Преодолевая границы — географические, психологические, яыковые — обобщать опыт и совместно вырабатывать новые протоколы лечения.</p>
+                                    <p>Вебинар с участием мэтра из медицинской Академии Брюсселя Phil Brown и президента общества колопроктологов Парижа John Goldshtein — «Тема Болезнь Крона и лечение геморроя» пройдёт для зарегистрированных пользователей 15 сентября 2020 в прямом эфире!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mix video END -->
+                    </div>
+
+                    <div class="mix-detail-item">
+                        <div class="mix-author-bg"><img src="files/mix-author-bg.png" alt="" /></div>
+                        <div class="mix-header">
+                            <div class="mix-header-title"><span><em>Искусство сочетать:</em></span> комбинированное лечение 2</div>
+                            <div class="mix-header-type">вебинар 2</div>
+                        </div>
+
+                        <div class="mix-schedule-link"><a href="#">РАСписание</a></div>
+
+                        <!-- mix video -->
+                        <div class="mix-video">
+                            <div class="mix-video-subtitle-mobile">Синдром раздраженного кишечника и лечение геморроя 2</div>
+                            <div class="mix-video-title">лайфтрансляция</div>
+                            <div class="mix-video-player">
+                                <div class="mix-video-player-preview">
+                                    <div class="mix-video-player-preview-photo" style="background-image:url(files/mix-video.jpg)"></div>
+                                    <div class="mix-video-player-preview-btn"></div>
+                                </div>
+                                <div class="mix-video-player-content"></div>
+                            </div>
+                            <div class="mix-video-info">
+                                <div class="mix-video-author">John<br /> Goldshtein 2</div>
+                                <div class="mix-video-title-mobile">лайфтрансляция</div>
+                                <div class="mix-video-subtitle">Синдром раздраженного кишечника и лечение геморроя</div>
+                                <div class="mix-video-descr">
+                                    <p>Отдельный вид нашего общего искусства — общаться с коллегами из других стран. Преодолевая границы — географические, психологические, языковые – обобщать опыт и совместно вырабатывать новые протоколы лечения.<br /> Отдельный вид нашего общего искусства — общаться с коллегами из других стран. Преодолевая границы — географические, психологические, яыковые — обобщать опыт и совместно вырабатывать новые протоколы лечения.</p>
+                                    <p>Вебинар с участием мэтра из медицинской Академии Брюсселя Phil Brown и президента общества колопроктологов Парижа John Goldshtein — «Тема Болезнь Крона и лечение геморроя» пройдёт для зарегистрированных пользователей 15 сентября 2020 в прямом эфире!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mix video END -->
+                    </div>
+
+                    <div class="mix-detail-item">
+                        <div class="mix-author-bg"><img src="files/mix-author-bg.png" alt="" /></div>
+                        <div class="mix-header">
+                            <div class="mix-header-title"><span><em>Искусство сочетать:</em></span> комбинированное лечение 3</div>
+                            <div class="mix-header-type">вебинар 3</div>
+                        </div>
+
+                        <div class="mix-schedule-link"><a href="#">РАСписание</a></div>
+
+                        <!-- mix video -->
+                        <div class="mix-video">
+                            <div class="mix-video-subtitle-mobile">Синдром раздраженного кишечника и лечение геморроя 3</div>
+                            <div class="mix-video-title">лайфтрансляция</div>
+                            <div class="mix-video-player">
+                                <div class="mix-video-player-preview">
+                                    <div class="mix-video-player-preview-photo" style="background-image:url(files/mix-video.jpg)"></div>
+                                    <div class="mix-video-player-preview-btn"></div>
+                                </div>
+                                <div class="mix-video-player-content"></div>
+                            </div>
+                            <div class="mix-video-info">
+                                <div class="mix-video-author">John<br /> Goldshtein 3</div>
+                                <div class="mix-video-title-mobile">лайфтрансляция</div>
+                                <div class="mix-video-subtitle">Синдром раздраженного кишечника и лечение геморроя</div>
+                                <div class="mix-video-descr">
+                                    <p>Отдельный вид нашего общего искусства — общаться с коллегами из других стран. Преодолевая границы — географические, психологические, языковые – обобщать опыт и совместно вырабатывать новые протоколы лечения.<br /> Отдельный вид нашего общего искусства — общаться с коллегами из других стран. Преодолевая границы — географические, психологические, яыковые — обобщать опыт и совместно вырабатывать новые протоколы лечения.</p>
+                                    <p>Вебинар с участием мэтра из медицинской Академии Брюсселя Phil Brown и президента общества колопроктологов Парижа John Goldshtein — «Тема Болезнь Крона и лечение геморроя» пройдёт для зарегистрированных пользователей 15 сентября 2020 в прямом эфире!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mix video END -->
+                    </div>
+
+                    <div class="mix-detail-item">
+                        <div class="mix-author-bg"><img src="files/mix-author-bg.png" alt="" /></div>
+                        <div class="mix-header">
+                            <div class="mix-header-title"><span><em>Искусство сочетать:</em></span> комбинированное лечение</div>
+                            <div class="mix-header-type">вебинар</div>
+                        </div>
+
+                        <div class="mix-schedule-link"><a href="#">РАСписание</a></div>
+
+                        <!-- mix video -->
+                        <div class="mix-video">
+                            <div class="mix-video-subtitle-mobile">Синдром раздраженного кишечника и лечение геморроя</div>
+                            <div class="mix-video-title">лайфтрансляция</div>
+                            <div class="mix-video-player">
+                                <div class="mix-video-player-preview">
+                                    <div class="mix-video-player-preview-photo" style="background-image:url(files/mix-video.jpg)"></div>
+                                    <div class="mix-video-player-preview-btn"></div>
+                                </div>
+                                <div class="mix-video-player-content"></div>
+                            </div>
+                            <div class="mix-video-info">
+                                <div class="mix-video-author">John<br /> Goldshtein</div>
+                                <div class="mix-video-title-mobile">лайфтрансляция</div>
+                                <div class="mix-video-subtitle">Синдром раздраженного кишечника и лечение геморроя</div>
+                                <div class="mix-video-descr">
+                                    <p>Отдельный вид нашего общего искусства — общаться с коллегами из других стран. Преодолевая границы — географические, психологические, языковые – обобщать опыт и совместно вырабатывать новые протоколы лечения.<br /> Отдельный вид нашего общего искусства — общаться с коллегами из других стран. Преодолевая границы — географические, психологические, яыковые — обобщать опыт и совместно вырабатывать новые протоколы лечения.</p>
+                                    <p>Вебинар с участием мэтра из медицинской Академии Брюсселя Phil Brown и президента общества колопроктологов Парижа John Goldshtein — «Тема Болезнь Крона и лечение геморроя» пройдёт для зарегистрированных пользователей 15 сентября 2020 в прямом эфире!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mix video END -->
+                    </div>
+
+                    <div class="mix-detail-item">
+                        <div class="mix-author-bg"><img src="files/mix-author-bg.png" alt="" /></div>
+                        <div class="mix-header">
+                            <div class="mix-header-title"><span><em>Искусство сочетать:</em></span> комбинированное лечение 2</div>
+                            <div class="mix-header-type">вебинар 2</div>
+                        </div>
+
+                        <div class="mix-schedule-link"><a href="#">РАСписание</a></div>
+
+                        <!-- mix video -->
+                        <div class="mix-video">
+                            <div class="mix-video-subtitle-mobile">Синдром раздраженного кишечника и лечение геморроя 2</div>
+                            <div class="mix-video-title">лайфтрансляция</div>
+                            <div class="mix-video-player">
+                                <div class="mix-video-player-preview">
+                                    <div class="mix-video-player-preview-photo" style="background-image:url(files/mix-video.jpg)"></div>
+                                    <div class="mix-video-player-preview-btn"></div>
+                                </div>
+                                <div class="mix-video-player-content"></div>
+                            </div>
+                            <div class="mix-video-info">
+                                <div class="mix-video-author">John<br /> Goldshtein 2</div>
+                                <div class="mix-video-title-mobile">лайфтрансляция</div>
+                                <div class="mix-video-subtitle">Синдром раздраженного кишечника и лечение геморроя</div>
+                                <div class="mix-video-descr">
+                                    <p>Отдельный вид нашего общего искусства — общаться с коллегами из других стран. Преодолевая границы — географические, психологические, языковые – обобщать опыт и совместно вырабатывать новые протоколы лечения.<br /> Отдельный вид нашего общего искусства — общаться с коллегами из других стран. Преодолевая границы — географические, психологические, яыковые — обобщать опыт и совместно вырабатывать новые протоколы лечения.</p>
+                                    <p>Вебинар с участием мэтра из медицинской Академии Брюсселя Phil Brown и президента общества колопроктологов Парижа John Goldshtein — «Тема Болезнь Крона и лечение геморроя» пройдёт для зарегистрированных пользователей 15 сентября 2020 в прямом эфире!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mix video END -->
+                    </div>
+
+                    <div class="mix-detail-item">
+                        <div class="mix-author-bg"><img src="files/mix-author-bg.png" alt="" /></div>
+                        <div class="mix-header">
+                            <div class="mix-header-title"><span><em>Искусство сочетать:</em></span> комбинированное лечение 3</div>
+                            <div class="mix-header-type">вебинар 3</div>
+                        </div>
+
+                        <div class="mix-schedule-link"><a href="#">РАСписание</a></div>
+
+                        <!-- mix video -->
+                        <div class="mix-video">
+                            <div class="mix-video-subtitle-mobile">Синдром раздраженного кишечника и лечение геморроя 3</div>
+                            <div class="mix-video-title">лайфтрансляция</div>
+                            <div class="mix-video-player">
+                                <div class="mix-video-player-preview">
+                                    <div class="mix-video-player-preview-photo" style="background-image:url(files/mix-video.jpg)"></div>
+                                    <div class="mix-video-player-preview-btn"></div>
+                                </div>
+                                <div class="mix-video-player-content"></div>
+                            </div>
+                            <div class="mix-video-info">
+                                <div class="mix-video-author">John<br /> Goldshtein 3</div>
+                                <div class="mix-video-title-mobile">лайфтрансляция</div>
+                                <div class="mix-video-subtitle">Синдром раздраженного кишечника и лечение геморроя</div>
+                                <div class="mix-video-descr">
+                                    <p>Отдельный вид нашего общего искусства — общаться с коллегами из других стран. Преодолевая границы — географические, психологические, языковые – обобщать опыт и совместно вырабатывать новые протоколы лечения.<br /> Отдельный вид нашего общего искусства — общаться с коллегами из других стран. Преодолевая границы — географические, психологические, яыковые — обобщать опыт и совместно вырабатывать новые протоколы лечения.</p>
+                                    <p>Вебинар с участием мэтра из медицинской Академии Брюсселя Phil Brown и президента общества колопроктологов Парижа John Goldshtein — «Тема Болезнь Крона и лечение геморроя» пройдёт для зарегистрированных пользователей 15 сентября 2020 в прямом эфире!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mix video END -->
                     </div>
                 </div>
-                <!-- mix video END -->
 
             </div>
             <!-- mix END -->
@@ -214,6 +384,12 @@
                         <div class="footer-line-right"></div>
                     </div>
                 </div>
+
+                <div class="footer-lic">
+                    <span>L.RU.MKT.CC.09.2020.3404</span>
+                    <span>L.RU.MKT.CC.09.2020.3404</span>
+                </div>
+
             </footer>
 
         </div>
