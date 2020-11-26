@@ -1,4 +1,58 @@
 <div class="window-auth">
+    <div class="window-title">профиль</div>
+    <form action="#" method="post">
+        <div class="form-field">
+            <div class="form-label">Имя <span>*</span></div>
+            <div class="form-input"><input type="text" name="firstname" value="Иван" class="required" /></div>
+        </div>
+        <div class="form-field">
+            <div class="form-label">Фамилия <span>*</span></div>
+            <div class="form-input"><input type="text" name="lastname" value="Иванов" class="required" /></div>
+        </div>
+        <div class="form-field">
+            <div class="form-label">E-mail <span>*</span></div>
+            <div class="form-input"><input type="text" name="email" value="example@example.ru" class="email required" /></div>
+        </div>
+        <div class="form-field">
+            <div class="form-label">Телефон <span>*</span></div>
+            <div class="form-input"><input type="text" name="phone" value="+7 (999) 111-11-11" class="phoneRU required" /></div>
+        </div>
+        <div class="form-field">
+            <div class="form-label">Специализация <span>*</span></div>
+            <div class="form-select">
+                <select name="speciality" class="required">
+                    <option value="Хирург" selected="selected">Хирург</option>
+                    <option value="Терапевт">Терапевт</option>
+                    <option value="Педиатр">Педиатр</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-field">
+            <div class="form-label">Место работы <span>*</span></div>
+            <div class="form-input"><input type="text" name="post" value="Поликлиника" class="required" /></div>
+        </div>
+        <div class="form-field">
+            <div class="form-label">Город <span>*</span></div>
+            <div class="form-input"><input type="text" name="city" value="Москва" class="required" /></div>
+        </div>
+        <div class="form-field">
+            <div class="form-label">Пароль <span>*</span></div>
+            <div class="form-input"><input type="password" name="password" value="" class="required" id="password" /></div>
+        </div>
+        <div class="form-field">
+            <div class="form-label">Повторить пароль <span>*</span></div>
+            <div class="form-input"><input type="password" name="repassword" value="" equalTo="#password" /></div>
+        </div>
+        <div class="form-field">
+            <div class="form-checkbox"><label><input type="checkbox" name="policy" checked="checked" class="required" /><span>Я даю своё согласие АО “Байер” на обработку моих персональных данных, указанных в настоящей Анкете. В соответствии с Федеральным законом №38-ФЗ «О рекламе» от 13.03.2006 г., я даю согласие свободно, своей волей и в своем интересе АО “Байер” на периодическое получение любой информации, направленной по адресу моей электронной почты и/или на номер моего мобильного телефона.<br /> Я подтверждаю, что все указанные в настоящей анкете данные верны. Я принимаю условия указанных документов:<br /> <a href="#">Политика конфиденциальности</a><br /> <a href="#">Положение о персональных данных</a><br /> <a href="#">Пользовательское соглашение</a></span></label></div>
+        </div>
+        <div class="registration-ctrl">
+            <div class="registration-hint"><span>*</span> Поле обязательно для заполнения</div>
+            <div class="registration-submit">
+                <div class="form-submit"><input type="submit" value="Готово" /></div>
+            </div>
+        </div>
+    </form>
     <form action="#" method="post">
         <div class="form-field">
             <div class="form-label">Отображемое имя</div>
@@ -40,9 +94,10 @@
                 <div class="form-input"><input type="text" name="specialization" value="Проктолог" class="required" /></div>
             </div>
         </div>
+                <div class="form-checkbox"><label><input type="checkbox" name="policy" class="required" checked="checked" /><span>Я даю своё согласие АО “Байер” на обработку моих персональных данных, указанных в настоящей Анкете. В соответствии с Федеральным законом №38-ФЗ «О рекламе» от 13.03.2006 г., я даю согласие свободно, своей волей и в своем интересе АО “Байер” на периодическое получение любой информации, направленной по адресу моей электронной почты и/или на номер моего мобильного телефона.<br /> Я подтверждаю, что все указанные в настоящей анкете данные верны. Я принимаю условия указанных документов:<br /> <a href="#">Политика конфиденциальности</a><br /> <a href="#">Положение о персональных данных</a><br /> <a href="#">Пользовательское соглашение</a></span></label></div>
         <div class="registration-ctrl">
             <div class="registration-checkbox">
-                <div class="form-checkbox"><label><input type="checkbox" name="subscribe" checked="checked" /><span><em></em>я согласен <strong>на рассылку</strong></span></label></div>
+                <div class="form-checkbox"><label><input type="checkbox" name="policy" checked="checked" class="required" /><span><em></em>я согласен <strong>на рассылку</strong></span></label></div>
             </div>
             <div class="registration-submit">
                 <div class="form-submit"><input type="submit" value="Готово" /></div>

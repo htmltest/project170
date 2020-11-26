@@ -1,49 +1,53 @@
 <div class="window-auth">
+    <div class="window-title">Создайте свой<br /> аккаунт или <a href="windows/auth.html" class="window-link">войдите</a></div>
     <form action="#" method="post">
         <div class="form-field">
-            <div class="form-label">Отображемое имя</div>
-            <div class="form-input"><input type="text" name="name" value="" class="required" /></div>
+            <div class="form-label">Имя <span>*</span></div>
+            <div class="form-input"><input type="text" name="firstname" value="" class="required" /></div>
         </div>
         <div class="form-field">
-            <div class="form-label">E-mail</div>
+            <div class="form-label">Фамилия <span>*</span></div>
+            <div class="form-input"><input type="text" name="lastname" value="" class="required" /></div>
+        </div>
+        <div class="form-field">
+            <div class="form-label">E-mail <span>*</span></div>
             <div class="form-input"><input type="text" name="email" value="" class="email required" /></div>
         </div>
-        <div class="form-group">
-            <div class="form-field">
-                <div class="form-label">имя</div>
-                <div class="form-input"><input type="text" name="firstname" value="" class="required" /></div>
-            </div>
-            <div class="form-field">
-                <div class="form-label">фамилия</div>
-                <div class="form-input"><input type="text" name="lastname" value="" class="required" /></div>
-            </div>
-            <div class="form-row">
-                <div class="form-field">
-                    <div class="form-label">Страна</div>
-                    <div class="form-select">
-                        <select name="country" class="required">
-                            <option value="RU">RU</option>
-                            <option value="EN">EN</option>
-                            <option value="UA">UA</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-field">
-                    <div class="form-label">дата<br /> рождения</div>
-                    <div class="form-input form-input-date"><input type="text" name="birthday" value="" class="required" /></div>
-                </div>
+        <div class="form-field">
+            <div class="form-label">Телефон <span>*</span></div>
+            <div class="form-input"><input type="text" name="phone" value="" class="phoneRU required" /></div>
+        </div>
+        <div class="form-field">
+            <div class="form-label">Специализация <span>*</span></div>
+            <div class="form-select">
+                <select name="speciality" class="required">
+                    <option value="Хирург">Хирург</option>
+                    <option value="Терапевт">Терапевт</option>
+                    <option value="Педиатр">Педиатр</option>
+                </select>
             </div>
         </div>
-        <div class="form-group">
-            <div class="form-field">
-                <div class="form-label">специализация</div>
-                <div class="form-input"><input type="text" name="specialization" value="" class="required" /></div>
-            </div>
+        <div class="form-field">
+            <div class="form-label">Место работы <span>*</span></div>
+            <div class="form-input"><input type="text" name="post" value="" class="required" /></div>
+        </div>
+        <div class="form-field">
+            <div class="form-label">Город <span>*</span></div>
+            <div class="form-input"><input type="text" name="city" value="" class="required" /></div>
+        </div>
+        <div class="form-field">
+            <div class="form-label">Пароль <span>*</span></div>
+            <div class="form-input"><input type="password" name="password" value="" class="required" id="password" /></div>
+        </div>
+        <div class="form-field">
+            <div class="form-label">Повторить пароль <span>*</span></div>
+            <div class="form-input"><input type="password" name="repassword" value="" equalTo="#password" /></div>
+        </div>
+        <div class="form-field">
+            <div class="form-checkbox"><label><input type="checkbox" name="policy" checked="checked" class="required" /><span>Я даю своё согласие АО “Байер” на обработку моих персональных данных, указанных в настоящей Анкете. В соответствии с Федеральным законом №38-ФЗ «О рекламе» от 13.03.2006 г., я даю согласие свободно, своей волей и в своем интересе АО “Байер” на периодическое получение любой информации, направленной по адресу моей электронной почты и/или на номер моего мобильного телефона.<br /> Я подтверждаю, что все указанные в настоящей анкете данные верны. Я принимаю условия указанных документов:<br /> <a href="#">Политика конфиденциальности</a><br /> <a href="#">Положение о персональных данных</a><br /> <a href="#">Пользовательское соглашение</a></span></label></div>
         </div>
         <div class="registration-ctrl">
-            <div class="registration-checkbox">
-                <div class="form-checkbox"><label><input type="checkbox" name="subscribe" checked="checked" /><span><em></em>я согласен <strong>на рассылку</strong></span></label></div>
-            </div>
+            <div class="registration-hint"><span>*</span> Поле обязательно для заполнения</div>
             <div class="registration-submit">
                 <div class="form-submit"><input type="submit" value="Готово" /></div>
             </div>
