@@ -20,8 +20,14 @@
 
             <header>
                 <a href="#" class="mobile-menu-link"><div class="mobile-menu-link-1"></div><div class="mobile-menu-link-2"></div><div class="mobile-menu-link-3"></div></a>
-                <div class="logo">только для врачей</div>
-                <div class="header-user"><a href="windows/profile.html" class="window-link"><span>Андрей</span><span>Агапонов</span></a></div>
+                <div class="logo"><a href="#">только для врачей</a></div>
+                <div class="header-user">
+                    <a href="windows/profile.html" class="window-link"><span>Андрей Длинное имя для проверки</span><span>Агапонов Длинная фамилия для проверки</span></a>
+                    <ul>
+                        <li><a href="windows/profile.html" class="window-link">Профиль</a></li>
+                        <li><a href="#">Выйти<img src="images/logout.svg" alt="" /></a></li>
+                    </ul>
+                </div>
                 <div class="header-menu">
                     <ul>
                         <li class="active"><a href="#">Советы наставников</a></li>
@@ -52,14 +58,15 @@
 
                 <div class="master-header">
                     <div class="master-header-bg"><img src="images/master-header.jpg" alt="" /></div>
-                    <div class="master-header-title"><img src="images/master-header-title.png" alt="Советы наставников" /></div>
+                    <div class="master-header-title">Советы <span>наставников</span></div>
                     <div class="master-header-subtitle">хирургическое лечение заболеваний прямой кишки и язвенного колита</div>
                 </div>
 
                 <div class="master-info">
                     <div class="master-photo"><img src="files/master-1.png" alt="" /></div>
                     <div class="master-info-text">
-                        <div class="master-name">Иван<br /> иванов</div>
+                        <div class="master-name">Иван<br /> Аносов</div>
+                        <div class="master-post">врач-колопроктолог,<br /> кандидат медицинских<br /> наук</div>
                     </div>
                 </div>
 
@@ -261,55 +268,51 @@
                 <!-- master other -->
                 <div class="master-other">
                     <div class="master-other-title"><span>Другие</span><br /> <span>материалы</span></div>
-                    <div class="master-other-list">
-                        <div class="master-other-list-inner">
-                            <div class="master-other-item active">
-                                <a href="ajax/master-auth-1.html" class="master-other-item-inner">
-                                    <div class="master-other-item-photo"><img src="files/master-other-1.jpg" alt="" /></div>
-                                    <div class="master-other-item-title">хирургическое лечение заболеваний прямой кишки и язвенного колита</div>
-                                    <div class="master-other-item-author">Лектор:</div>
-                                    <div class="master-other-item-author-name">Андрей Мудров</div>
-                                </a>
-                            </div>
-                            <div class="master-other-item">
-                                <a href="ajax/master-auth-2.html" class="master-other-item-inner">
-                                    <div class="master-other-item-photo"><img src="files/master-other-2.jpg" alt="" /></div>
-                                    <div class="master-other-item-title">Постоперационный уход при операциях на&nbsp;толстом кишечнике</div>
-                                    <div class="master-other-item-author">Лектор:</div>
-                                    <div class="master-other-item-author-name">Алексей Москалев</div>
-                                </a>
-                            </div>
-                            <div class="master-other-item">
-                                <a href="ajax/master-auth-3.html" class="master-other-item-inner">
-                                    <div class="master-other-item-photo"><img src="files/master-other-3.jpg" alt="" /></div>
-                                    <div class="master-other-item-title">Лекция Костарева</div>
-                                    <div class="master-other-item-author">Лектор:</div>
-                                    <div class="master-other-item-author-name">Иван Костарев</div>
-                                </a>
-                            </div>
-                            <div class="master-other-item">
-                                <a href="ajax/master-auth-4.html" class="master-other-item-inner">
-                                    <div class="master-other-item-photo"><img src="files/master-other-1.jpg" alt="" /></div>
-                                    <div class="master-other-item-title">Лекция Благодарного</div>
-                                    <div class="master-other-item-author">Лектор:</div>
-                                    <div class="master-other-item-author-name">Леонид Благодарный</div>
-                                </a>
-                            </div>
-                            <div class="master-other-item">
-                                <a href="ajax/master-auth-1.html" class="master-other-item-inner">
-                                    <div class="master-other-item-photo"><img src="files/master-other-1.jpg" alt="" /></div>
-                                    <div class="master-other-item-title">хирургическое лечение заболеваний прямой кишки и язвенного колита</div>
-                                    <div class="master-other-item-author">Лектор:</div>
-                                    <div class="master-other-item-author-name">Андрей Мудров</div>
-                                </a>
-                            </div>
-                            <div class="master-other-item">
-                                <a href="ajax/master-auth-2.html" class="master-other-item-inner">
-                                    <div class="master-other-item-photo"><img src="files/master-other-2.jpg" alt="" /></div>
-                                    <div class="master-other-item-title">Постоперационный уход при операциях на&nbsp;толстом кишечнике</div>
-                                    <div class="master-other-item-author">Лектор:</div>
-                                    <div class="master-other-item-author-name">Алексей Москалев</div>
-                                </a>
+                    <div class="master-other-list-wrapper">
+                        <div class="master-other-list">
+                            <div class="master-other-list-inner">
+                                <div class="master-other-item active">
+                                    <a href="#" class="master-other-item-inner">
+                                        <div class="master-other-item-photo"><img src="files/master-other-1.jpg" alt="" /></div>
+                                        <div class="master-other-item-title">Допплерконтролируемая дезартеризация внутренних геморроидальных узлов с мукопексией на 7 и 11 часах, дезартеризация со склерозированием на 3 часах.</div>
+                                        <div class="master-other-item-author">Лектор: <span>Аносов И. С.</span></div>
+                                    </a>
+                                </div>
+                                <div class="master-other-item">
+                                    <a href="#" class="master-other-item-inner">
+                                        <div class="master-other-item-photo"><img src="files/master-other-2.jpg" alt="" /></div>
+                                        <div class="master-other-item-title">Иссечение свища, вскрытие и дренирование затека, проведение дренирующей латексной лигатуры.</div>
+                                        <div class="master-other-item-author">Лектор: <span>Титов А.</span></div>
+                                    </a>
+                                </div>
+                                <div class="master-other-item">
+                                    <a href="#" class="master-other-item-inner">
+                                        <div class="master-other-item-photo"><img src="files/master-other-3.jpg" alt="" /></div>
+                                        <div class="master-other-item-title">Склерозирование внутренних геморриоидальных узлов, иссечение наружных.</div>
+                                        <div class="master-other-item-author">Лектор: <span>Костарев И. В.</span></div>
+                                    </a>
+                                </div>
+                                <div class="master-other-item">
+                                    <a href="#" class="master-other-item-inner">
+                                        <div class="master-other-item-photo"><img src="files/master-other-1.jpg" alt="" /></div>
+                                        <div class="master-other-item-title">Допплерконтролируемая дезартеризация внутренних геморроидальных узлов с мукопексией на 7 и 11 часах, дезартеризация со склерозированием на 3 часах.</div>
+                                        <div class="master-other-item-author">Лектор: <span>Аносов И. С.</span></div>
+                                    </a>
+                                </div>
+                                <div class="master-other-item">
+                                    <a href="#" class="master-other-item-inner">
+                                        <div class="master-other-item-photo"><img src="files/master-other-2.jpg" alt="" /></div>
+                                        <div class="master-other-item-title">Иссечение свища, вскрытие и дренирование затека, проведение дренирующей латексной лигатуры.</div>
+                                        <div class="master-other-item-author">Лектор: <span>Титов А.</span></div>
+                                    </a>
+                                </div>
+                                <div class="master-other-item">
+                                    <a href="#" class="master-other-item-inner">
+                                        <div class="master-other-item-photo"><img src="files/master-other-3.jpg" alt="" /></div>
+                                        <div class="master-other-item-title">Склерозирование внутренних геморриоидальных узлов, иссечение наружных.</div>
+                                        <div class="master-other-item-author">Лектор: <span>Костарев И. В.</span></div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <a href="#" class="master-other-list-prev"></a>

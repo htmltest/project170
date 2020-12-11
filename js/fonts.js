@@ -16,6 +16,10 @@ if (sessionStorage.fontsLoaded) {
         var Roboto300 = new FontFaceObserver('Roboto', {
             weight: '300'
         });
+        var Roboto300i = new FontFaceObserver('Roboto', {
+            weight: '300',
+            style: 'italic'
+        });
         var Roboto400 = new FontFaceObserver('Roboto', {
             weight: 'normal'
         });
@@ -40,6 +44,7 @@ if (sessionStorage.fontsLoaded) {
 
         Promise.all([
             Roboto300.load(),
+            Roboto300i.load(),
             Roboto400.load(),
             Roboto500.load(),
             Roboto700.load(),

@@ -1,0 +1,16 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <symbol viewBox="0 0 8 12" id="gallery-prev">
+        <path d="M7 1L2 6L7 11" stroke-width="2" />
+    </symbol>
+
+    <symbol viewBox="0 0 8 12" id="gallery-next">
+        <path d="M1 11L6 6L0.999999 1" stroke-width="2" />
+    </symbol>
+
+    <symbol viewBox="0 0 25 32" id="file-icon">
+        <path d="M13.5503 1.0625C13.6829 1.0625 13.8101 1.11518 13.9039 1.20895L24.1244 11.4294C24.2181 11.5232 24.2708 11.6504 24.2708 11.783V28.35C24.2708 29.0363 23.9982 29.6944 23.5129 30.1796C23.0277 30.6649 22.3695 30.9375 21.6833 30.9375H3.1583C2.47205 30.9375 1.81391 30.6649 1.32866 30.1796C0.843411 29.6944 0.570801 29.0363 0.570801 28.35V3.65C0.570801 2.96375 0.843412 2.30561 1.32866 1.82036C1.81391 1.33511 2.47205 1.0625 3.1583 1.0625H13.5503Z" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M13.9644 2.1062V10.3687C13.9644 10.921 14.4121 11.3687 14.9644 11.3687H23.2269" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+
+</svg>

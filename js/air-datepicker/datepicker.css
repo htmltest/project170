@@ -30,7 +30,7 @@
           flex-wrap: wrap; }
 
 .datepicker--cell {
-  border-radius: 4px;
+  border-radius: 50%;
   box-sizing: border-box;
   cursor: pointer;
   display: -webkit-flex;
@@ -46,11 +46,11 @@
   height: 32px;
   z-index: 1; }
   .datepicker--cell.-focus- {
-    background: #f0f0f0; }
+    background: rgba(21,46,213,0.1); }
   .datepicker--cell.-current- {
-    color: #4EB5E6; }
+    background: rgba(21,46,213,1); color: #fff;}
     .datepicker--cell.-current-.-focus- {
-      color: #4a4a4a; }
+      color: #fff; }
     .datepicker--cell.-current-.-in-range- {
       color: #4EB5E6; }
   .datepicker--cell.-in-range- {
