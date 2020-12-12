@@ -511,7 +511,12 @@ $(document).ready(function() {
     $('body').on('click', '.profile-field-save', function(e) {
         var curField = $(this).parent();
         var curForm = curField.parents().filter('form');
-        curField.find('.profile-field-value').html(curField.find('input').val());
+        if (curField.find('input').length == 1) {
+            curField.find('.profile-field-value').html(curField.find('input').val());
+        }
+        if (curField.find('select').length == 1) {
+            curField.find('.profile-field-value').html(curField.find('select').val());
+        }
         curField.removeClass('editable');
         $.ajax({
             type: 'POST',
@@ -520,6 +525,12 @@ $(document).ready(function() {
             data: curForm.serialize(),
             cache: false
         });
+        e.preventDefault();
+    });
+
+    $('body').on('click', '.profile-password-link', function(e) {
+        $('.profile-password-form').show();
+        $('.profile-password-link').hide();
         e.preventDefault();
     });
 

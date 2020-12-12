@@ -32,7 +32,15 @@
                 <div class="profile-field-title">Специальность</div>
                 <div class="profile-field-value">Хирург</div>
                 <a href="#" class="profile-field-edit"></a>
-                <div class="profile-field-input"><input type="text" name="speciality" value="Хирург" /></div>
+                <div class="profile-field-input">
+                    <div class="form-select">
+                        <select name="speciality" class="required">
+                            <option value="Хирург" selected="selected">Хирург</option>
+                            <option value="Колороктолог">Колороктолог</option>
+                            <option value="Другое">Другое</option>
+                        </select>
+                    </div>
+                </div>
                 <a href="#" class="profile-field-save"></a>
             </div>
 
@@ -95,21 +103,15 @@
             <div class="profile-field">
                 <div class="profile-field-title">Мобильный телефон</div>
                 <div class="profile-field-value">+7 999 123-45-67</div>
-                <a href="#" class="profile-field-edit"></a>
-                <div class="profile-field-input"><input type="text" name="phone" value="+7 999 123-45-67" class="phoneRU" /></div>
-                <a href="#" class="profile-field-save"></a>
             </div>
 
             <div class="profile-field">
                 <div class="profile-field-title">Адрес электронной почты</div>
                 <div class="profile-field-value">ivanov@mail.ru</div>
-                <a href="#" class="profile-field-edit"></a>
-                <div class="profile-field-input"><input type="text" name="email" value="ivanov@mail.ru" class="email" /></div>
-                <a href="#" class="profile-field-save"></a>
             </div>
         </div>
     </form>
-    <form action="#" method="post">
+    <form action="#" method="post" class="profile-password-form">
         <div class="form-field">
             <div class="form-label">Старый пароль <span>*</span></div>
             <div class="form-input"><input type="password" name="oldpassword" value="" class="required" /></div>
@@ -126,4 +128,7 @@
             <div class="form-submit"><input type="submit" value="Изменить пароль" /></div>
         </div>
     </form>
+    <div class="form-field profile-password-link">
+        <a href="#" class="btn">Изменить пароль</a>
+    </div>
 </div>
