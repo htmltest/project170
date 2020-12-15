@@ -603,7 +603,7 @@ a.school-video-big-player-preview:hover .school-video-big-player-preview-btn {op
     .school-video-descr {font-size:16px; line-height:19px; color:#fff; margin:12px 20px 0 20px; max-height:none}
 }
 
-.school-video-list {float:right; margin:-2.31vw -21.18vw 0 0; width:17.37vw; height:28.62vw; position:relative; overflow:hidden; opacity:0.6}
+.school-video-list {float:right; margin:-2.31vw -21.18vw 0 0; width:17.37vw; height:28.62vw; position:relative; overflow:hidden; opacity:0.2}
 .school-video-list.auth {opacity:1}
 .school-video-list-inner {position:relative; transition:top 0.3s; top:0}
 .school-video-list-item {display:block; margin:0.93vw 0 0 0; text-decoration:none; color:#4774f8; transition:opacity 0.2s}
@@ -648,9 +648,9 @@ a.school-video-list-item:hover {opacity:0.8}
 }
 
 .school-video-reg {position:absolute; right:-19.68vw; top:2.21vw; width:17.37vw}
-.school-video-reg-title {font-weight:500; font-size:1.33vw; line-height:1.13em; color:#305296}
+.school-video-reg-title {font-weight:500; font-size:1.43vw; line-height:1.13em; color:#305296}
 .school-video-reg-btn {margin:1.06vw 0 0 0}
-.school-video-reg-btn a {display:inline-block; text-decoration:none; color:#fff; font-size:1.5vw; line-height:2.39vw; height:2.5vw; padding:0 9px; background:#ff525d; transition:opacity 0.2s; text-transform:uppercase}
+.school-video-reg-btn a {display:inline-block; text-decoration:none; color:#fff; font-size:1.5vw; line-height:2.39vw; height:2.5vw; padding:0 1.12vw; background:#ff525d; transition:opacity 0.2s; text-transform:uppercase}
 .fonts-loaded .school-video-reg-btn a {font-family:RobotoCondensed, sans-serif}
 .school-video-reg-btn a:hover {opacity:0.8}
 
