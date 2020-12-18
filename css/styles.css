@@ -271,7 +271,7 @@ header::after {content:""; display:block; clear:both}
     .mobile-menu-list ul li.active a {background:#a51b36}
 }
 
-.welcome {background:url(../images/welcome.jpg) center top}
+.welcome {background:url(../images/welcome.jpg) center top; min-height:calc(100vh - 3.8vw)}
 .welcome-container {padding:0 15.12%}
 .welcome-container::after {content:""; display:block; clear:both}
 .welcome-inner {float:right; width:50%}
@@ -309,7 +309,7 @@ header::after {content:""; display:block; clear:both}
 .welcome-slider-inner .slick-next:hover {opacity:1}
 
 @media screen and (max-width:1199px) {
-    .welcome {background-size:730px auto; background-position:left top}
+    .welcome {background-size:730px auto; background-position:left top; min-height:0}
     .welcome::after {content:""; display:block; position:absolute; left:0; top:0; right:0; height:167px; background:url(../images/welcome-mobile.png) repeat-x; pointer-events:none}
     .welcome-container {padding:100px 35px 0 35px}
     .welcome-inner {float:none; width:auto}
@@ -382,6 +382,7 @@ header::after {content:""; display:block; clear:both}
 }
 
 .master-video-big {float:left; width:36.06vw}
+.master-video-subtitle {display:none}
 .master-video-big-item {display:none}
 .master-video-big-item.active {display:block}
 .master-video-big-player {position:relative; padding:15.83vw 0 0 0; width:28.43vw}
@@ -661,17 +662,6 @@ a.school-video-list-item:hover {opacity:0.8}
     .school-video-reg-btn a {font-size:27px; line-height:38px; height:38px}
 }
 
-.school-video-reg-mobile {display:none}
-
-@media screen and (max-width:1199px) {
-    .school-video-reg-mobile {display:block; margin:20px 0 0 0; text-align:center}
-    .school-video-reg-mobile-title {background:#f8ef49; color:#192a79; font-size:19px; line-height:17px; letter-spacing:-0.56px; padding:16px 40px; text-transform:uppercase}
-    .fonts-loaded .school-video-reg-mobile-title {font-family:RobotoCondensed, sans-serif}
-    .school-video-reg-mobile-btn {margin:-10px 0 0 0}
-    .school-video-reg-mobile-btn a {display:inline-block; vertical-align:top; text-decoration:none; color:#fff; font-size:23px; line-height:44px; height:44px; padding:0 15px; text-transform:uppercase; background:#d54c66}
-    .fonts-loaded .school-video-reg-mobile-btn a {font-family:RobotoCondensed, sans-serif}
-}
-
 .school-other {padding:0; position:relative}
 .school-other-title {display:none}
 .school-other-list-wrapper {position:relative; width:83.16vw; margin:0 auto; padding:0 3.12vw 0 0}
@@ -728,12 +718,12 @@ a.school-other-item-inner:hover {opacity:0.8; text-decoration:none}
     .school-other-list-next::after {background:url(../images/school-other-list-arrow-mobile.png) no-repeat center}
 }
 
-.mix {background:#1f1f1f; position:relative}
+.mix {background:#1f1f1f; position:relative; min-height:calc(100vh - 3.8vw - 4.25vw)}
 .mix.loading::after {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; z-index:9; background:rgba(22, 22, 22, 0.5) url(../images/loading.gif) no-repeat center 50px}
 .mix-container {position:relative; overflow:hidden}
 
 @media screen and (max-width:1199px) {
-    .mix {background:#000; padding:0 0 60px 0}
+    .mix {background:#000; padding:0 0 60px 0; min-height:0}
 }
 
 .mix-header-bg {position:absolute; left:3.69vw; top:0; width:30.15vw; line-height:0}
@@ -857,7 +847,7 @@ a.mix-schedule-item:hover {opacity:0.8; text-decoration:none}
 
 .mix-video {position:relative; padding:1.87vw 0 2.5vw 0; margin:0 23.75vw 0 30vw}
 .mix-video-container::after {content:""; display:block; clear:both}
-.mix-video-player-wrapper {float:left; width:28.25vw}
+.mix-video-player-wrapper {float:left; width:26.25vw}
 .mix-video-right {float:right; width:15.62vw}
 .mix-video-btn-add a {display:inline-block; vertical-align:top; padding:0 0.81vw; height:2vw; font-size:1vw; line-height:2vw; text-transform:uppercase; color:#03257c; background:#ffe72d; text-decoration:none}
 .fonts-loaded .mix-video-btn-add a {font-family:RobotoCondensed, sans-serif}
@@ -1214,12 +1204,11 @@ label.error {display:none !important}
 .text-with-hint-link:hover {border-bottom-color:transparent; text-decoration:none}
 .text-with-hint.open .text-with-hint-link::after {content:""; display:block; width:20px; height:20px; border-bottom:1px solid #e6e6e6; border-right:1px solid #e6e6e6; background:#fff; transform:rotate(45deg); position:absolute; left:50%; margin-left:-10px; bottom:100%; margin-bottom:13px; z-index:99}
 .text-with-hint-popup {display:block; text-align:left; transition:all 0.2s; visibility:hidden; opacity:0; padding:20px; transform:translateY(5px); position:absolute; left:0; bottom:100%; margin-bottom:23px; width:530px; background:#fff; border:1px solid #e6e6e6; box-shadow:6px 6px 40px rgba(185, 185, 185, 0.25); z-index:98}
-.text-with-hint.to-right .text-with-hint-popup {right:0; left:auto}
 .text-with-hint.open .text-with-hint-popup {visibility:visible; opacity:1; transform:none}
 .text-with-hint-popup::after {content:""; display:block; clear:both}
-.text-with-hint-popup-photo {display:block; float:left; width:105px; line-height:0}
+.text-with-hint-popup-photo {display:block; width:105px; line-height:0}
 .text-with-hint-popup-photo img {display:block; width:100%}
-.text-with-hint-popup-photo+.text-with-hint-popup-content {margin-left:125px}
+.text-with-hint-popup-photo+.text-with-hint-popup-content {margin-top:20px}
 .text-with-hint-popup-content {display:block}
 .text-with-hint-popup-title {display:block; font-size:22px; line-height:29px; font-weight:bold; color:#000}
 .text-with-hint-popup-text {display:block; margin:2px 0 0 0; font-weight:300; font-size:16px; line-height:24px; color:#000}
@@ -1248,6 +1237,10 @@ label.error {display:none !important}
 .profile-field-save {display:none; position:absolute; right:0; top:0; bottom:0; width:30px; background:url(../images/profile-save.svg) no-repeat right center}
 .profile-field.editable .profile-field-save {display:block}
 .profile-field-save:hover {opacity:0.8}
+
+@media screen and (max-width:1199px) {
+    .profile-field-input input {font-size:24px}
+}
 
 .profile-password-form {display:none}
 
