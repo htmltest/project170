@@ -404,6 +404,9 @@ $(document).ready(function() {
             }).done(function(html) {
                 curTab.find('.mix-detail-item').html(html);
                 $('.mix').removeClass('loading');
+                $('.mix-video-descr').mCustomScrollbar({
+                    axis: 'y'
+                });
                 $(window).trigger('resize');
             });
         }
@@ -547,6 +550,53 @@ $(document).ready(function() {
         $('.profile-password-link').hide();
         e.preventDefault();
     });
+
+    $('.master-header-subtitle').each(function() {
+        var curBlock = $('.master-video-big-item.active');
+        if (curBlock.length == 1) {
+            $(this).html(curBlock.find('.master-video-subtitle').html());
+        }
+    });
+
+    if (window.location.search != '') {
+        var tmp = (window.location.search.substr(1)).split('&');
+        var get = [];
+        for (var i = 0; i < tmp.length; i++) {
+            var tmp2 = tmp[i].split('=');
+            get[tmp2[0]] = tmp2[1];
+        }
+        if (typeof(get['id']) !== 'undefined') {
+            var curLink = $('a.master-video-list-item[data-id="' + get['id'] + '"]');
+            if (curLink.length == 1) {
+                var curItem = curLink;
+                if (!curItem.hasClass('active')) {
+                    $('.master-video-big-player-content').html('');
+                    $('.master-video-big-player.start').removeClass('start');
+                    $('a.master-video-list-item.active').removeClass('active');
+                    curItem.addClass('active');
+                    $('.master-video-big-item.active').removeClass('active');
+                    var curIndex = $('a.master-video-list-item').index(curItem);
+                    $('.master-video-big-item').eq(curIndex).addClass('active');
+                    if ($('.master-video-big-item.active .master-video-subtitle').length == 1) {
+                        $('.master-header-subtitle').html($('.master-video-big-item.active .master-video-subtitle').html());
+                    }
+                }
+            }
+            var curLink = $('a.school-video-list-item[data-id="' + get['id'] + '"]');
+            if (curLink.length == 1) {
+                var curItem = curLink;
+                if (!curItem.hasClass('active')) {
+                    $('.school-video-big-player-content').html('');
+                    $('.school-video-big-player.start').removeClass('start');
+                    $('a.school-video-list-item.active').removeClass('active');
+                    curItem.addClass('active');
+                    $('.school-video-big-item.active').removeClass('active');
+                    var curIndex = $('a.school-video-list-item').index(curItem);
+                    $('.school-video-big-item').eq(curIndex).addClass('active');
+                }
+            }
+        }
+    }
 
 });
 

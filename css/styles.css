@@ -239,9 +239,10 @@ header::after {content:""; display:block; clear:both}
 .header-menu ul li {float:left; margin:0 0 0 2.75vw; padding:0}
 .header-menu ul li:first-child {margin:0}
 .header-menu ul li::before {display:none}
-.header-menu ul li a {color:#f63559; text-decoration:none; display:block}
-.header-menu ul li.active a {color:#152ed5}
-.header-menu ul li a:hover {text-decoration:underline}
+.header-menu ul li a {color:#f63559; text-decoration:none; display:block; position:relative}
+.header-menu ul li a::after {content:""; display:block; position:absolute; left:0; bottom:1.25vw; right:0; height:1px; background:#fb8ea2; transform:scale(0, 1); transform-origin:right center; transition:transform 0.3s}
+.header-menu ul li.active a::after {transform:scale(1, 1)}
+.header-menu ul li a:hover::after {transform:scale(1, 1); transform-origin:left center}
 
 @media screen and (max-width:1199px) {
     .header-menu {display:none}
