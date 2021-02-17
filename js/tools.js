@@ -331,6 +331,12 @@ $(document).ready(function() {
         }
     });
 
+    $(document).click(function(e) {
+        if ($(e.target).hasClass('window')) {
+            windowClose();
+        }
+    });
+
     $('body').on('click', '.window-close', function(e) {
         windowClose();
         e.preventDefault();
