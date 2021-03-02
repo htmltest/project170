@@ -327,17 +327,21 @@ $(document).ready(function() {
 
     $('body').on('keyup', function(e) {
         if (e.keyCode == 27) {
-            windowClose();
+            if ($('.window').find('.window-no-closed').length == 0) {
+                windowClose();
+            }
         }
     });
 
     $(document).click(function(e) {
         if ($(e.target).hasClass('window')) {
-            windowClose();
+            if ($('.window').find('.window-no-closed').length == 0) {
+                windowClose();
+            }
         }
     });
 
-    $('body').on('click', '.window-close', function(e) {
+    $('body').on('click', '.window-close, .window-close-btn', function(e) {
         windowClose();
         e.preventDefault();
     });
