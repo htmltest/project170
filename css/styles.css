@@ -1260,7 +1260,7 @@ label.error {display:none !important}
     .breadcrumbs+h1 {margin-top:30px}
 }
 
-.window-alert {width:1223px; background:#fff url(../images/window-alert.jpg) repeat-y 1016px top; padding:80px 260px 60px 135px}
+.window-alert {width:1223px; background:#fff url(../images/window-alert.jpg) repeat-y 1016px top; padding:80px 260px 60px 135px; background-size:auto 100%}
 .window-alert+.window-close {display:none}
 .window-alert-title {font-weight:bold; font-size:40px; line-height:40px; text-transform:uppercase; color:#ee3f52; letter-spacing:-0.033em}
 .window-alert-text {font-size:30px; line-height:36px; color:#080808}
@@ -1273,7 +1273,7 @@ label.error {display:none !important}
 .window-alert-links a:first-child {margin:0}
 
 @media screen and (max-width:1260px) {
-    .window-alert {width:394px; padding:44px 40px 165px 40px; background:#fff url(../images/window-alert-mobile.jpg) no-repeat center bottom}
+    .window-alert {width:394px; padding:44px 40px 165px 40px; background:#fff url(../images/window-alert-mobile.jpg) no-repeat center bottom; background-size:auto auto}
     .window-alert-title {font-size:29px; line-height:29px}
     .window-alert-text {font-size:16px; line-height:19px; margin:27px 0 0 0}
     .window-alert-text p {margin:19px 0; padding:0}
